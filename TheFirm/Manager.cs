@@ -18,11 +18,10 @@ namespace TheFirm
         {
             this.phoneNumber = phoneNumber;
         }
-        public void GetProperties()
+        protected internal override void GetProperties()
         {
             Console.WriteLine("Manager");
             Console.WriteLine("Navn: " + Name + ", Efternavn: " + Surname + ", CPR: " + Cpr + ", Mobil: " + PhoneNumber);
-            Console.WriteLine(Name.GetTypeCode() + " " + Surname.GetTypeCode() + " " + Cpr.GetTypeCode() + " " + PhoneNumber.GetTypeCode());
             Console.WriteLine();
         }
     }

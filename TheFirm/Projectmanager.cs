@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheFirm
 {
-    class Projectmanager : Manager
+    class ProjectManager : Manager
     {
         // Properties
         protected internal string email;
@@ -14,16 +14,15 @@ namespace TheFirm
         public string Email { get => email; }
 
         // Constructor
-        public Projectmanager(string name, string surname, double cpr, int phoneNumber, string email) : base(name, surname, cpr, phoneNumber)
+        public ProjectManager(string name, string surname, double cpr, int phoneNumber, string email) : base(name, surname, cpr, phoneNumber)
         {
             this.email = email;
         }
 
-        public void GetProperties()
+        protected internal override void GetProperties()
         {
             Console.WriteLine("Project manager");
             Console.WriteLine("Navn: " + Name + ", Efternavn: " + Surname + ", CPR: " + Cpr + ", Mobil: " + PhoneNumber + ", Email: " + Email);
-            Console.WriteLine(Name.GetTypeCode() + " " + Surname.GetTypeCode() + " " + Cpr.GetTypeCode() + " " + PhoneNumber.GetTypeCode() + " " + Email.GetTypeCode());
             Console.WriteLine();
         }
     }

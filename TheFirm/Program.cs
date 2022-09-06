@@ -12,7 +12,7 @@ namespace TheFirm
         {
             Sweeper sweeper = new Sweeper("Jens", "Jensen", 2006903030);
             Manager manager = new Manager("Lars", "Kaspersen", 2710872020, 90807060);
-            Projectmanager projectmanager = new Projectmanager("Kasper", "Larsen", 1201851010, 20304050, "KJ@firm.com");
+            ProjectManager projectmanager = new ProjectManager("Kasper", "Larsen", 1201851010, 20304050, "KJ@firm.com");
 
             sweeper.GetProperties();
             manager.GetProperties();
