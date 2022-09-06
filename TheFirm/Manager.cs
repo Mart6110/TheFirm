@@ -11,6 +11,7 @@ namespace TheFirm
         // Properties
         private protected int phoneNumber;
 
+        // Encapsulations
         public int PhoneNumber { get => phoneNumber; }
 
         // Constructor
@@ -18,6 +19,8 @@ namespace TheFirm
         {
             this.phoneNumber = phoneNumber;
         }
+
+        // Overrides the method from the Employee class
         protected internal override void GetProperties()
         {
             Console.WriteLine("Manager");

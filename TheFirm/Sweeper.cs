@@ -11,6 +11,7 @@ namespace TheFirm
         // Constructor
         public Sweeper(string name, string surname, double cpr) : base(name, surname, cpr) { }
 
+        // Overrides the method from the Employee class
         protected internal override void GetProperties()
         {
             Console.WriteLine("Sweeper");

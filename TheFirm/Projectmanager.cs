@@ -11,6 +11,7 @@ namespace TheFirm
         // Properties
         protected internal string email;
 
+        // Encapsulations
         public string Email { get => email; }
 
         // Constructor
@@ -19,6 +20,7 @@ namespace TheFirm
             this.email = email;
         }
 
+        // Overrides the method from the Employee class
         protected internal override void GetProperties()
         {
             Console.WriteLine("Project manager");

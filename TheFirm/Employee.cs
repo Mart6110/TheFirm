@@ -13,6 +13,7 @@ namespace TheFirm
         private string surname;
         private double cpr;
 
+        // Encapsulations
         public string Name { get => name; }
         public string Surname { get => surname; }
         public double Cpr { get => cpr; }
@@ -25,6 +26,7 @@ namespace TheFirm
             this.cpr = cpr;
         }
 
+        // Makes a abstract method that the subclasses can initiate and override
         protected internal abstract void GetProperties();
     }
 }
