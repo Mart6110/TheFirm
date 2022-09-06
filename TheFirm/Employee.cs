@@ -11,15 +11,15 @@ namespace TheFirm
         // Properties
         private string name;
         private string surname;
-        private double cpr;
+        private string cpr;
 
         // Encapsulations
         public string Name { get => name; }
         public string Surname { get => surname; }
-        public double Cpr { get => cpr; }
+        public string Cpr { get => cpr; }
 
         // Constructor
-        public Employee(string name, string surname, double cpr)
+        public Employee(string name, string surname, string cpr)
         {
             this.name = name;
             this.surname = surname;

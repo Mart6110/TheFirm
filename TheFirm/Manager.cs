@@ -9,13 +9,13 @@ namespace TheFirm
     class Manager : Employee
     {
         // Properties
-        private protected int phoneNumber;
+        private protected string phoneNumber;
 
         // Encapsulations
-        public int PhoneNumber { get => phoneNumber; }
+        public string PhoneNumber { get => phoneNumber; }
 
         // Constructor
-        public Manager(string name, string surname, double cpr, int phoneNumber) : base(name, surname, cpr)
+        public Manager(string name, string surname, string cpr, string phoneNumber) : base(name, surname, cpr)
         {
             this.phoneNumber = phoneNumber;
         }

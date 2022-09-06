@@ -9,7 +9,7 @@ namespace TheFirm
     class Sweeper : Employee
     {
         // Constructor
-        public Sweeper(string name, string surname, double cpr) : base(name, surname, cpr) { }
+        public Sweeper(string name, string surname, string cpr) : base(name, surname, cpr) { }
 
         // Overrides the method from the Employee class
         protected internal override void GetProperties()

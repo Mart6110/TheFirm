@@ -15,7 +15,7 @@ namespace TheFirm
         public string Email { get => email; }
 
         // Constructor
-        public ProjectManager(string name, string surname, double cpr, int phoneNumber, string email) : base(name, surname, cpr, phoneNumber)
+        public ProjectManager(string name, string surname, string cpr, string phoneNumber, string email) : base(name, surname, cpr, phoneNumber)
         {
             this.email = email;
         }
